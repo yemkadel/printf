@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_hex - print num in small hex
  * @l: va_list args
@@ -6,6 +7,7 @@
  *
  * Return: int
  */
+
 int print_hex(va_list l, flags_t *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
@@ -25,6 +27,7 @@ int print_hex(va_list l, flags_t *f)
  *
  * Return: int
  */
+
 int print_hex_big(va_list l, flags_t *f)
 {
 	unsigned int num = va_arg(l, unsigned int);
