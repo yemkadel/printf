@@ -1,14 +1,11 @@
 #include "main.h"
-
 /**
- * print_bigS - Non printable characters
- * (0 < ASCII value < 32 or >= 127) are
- * printed this way: \x, followed by the ASCII code
- * value in hexadecimal (upper case - always 2 characters)
- * @l: va_list arguments from _printf
- * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
- * Return: number of char printed
+ * print_bigS - func handles no printable
+ * characters
+ * @l: va_list args
+ * @f: func pointer
+ *
+ * Return: int
  */
 int print_bigS(va_list l, flags_t *f)
 {
@@ -38,11 +35,11 @@ int print_bigS(va_list l, flags_t *f)
 }
 
 /**
- * print_rev - prints a string in reverse
- * @l: argument from _printf
- * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
- * Return: length of the printed string
+ * print_rev - print str in reverse
+ * @l: va_list args
+ * @f: func pointer
+ *
+ * Return: int
  */
 int print_rev(va_list l, flags_t *f)
 {
@@ -63,11 +60,11 @@ int print_rev(va_list l, flags_t *f)
 }
 
 /**
- * print_rot13 - prints a string using rot13
- * @l: list of arguments from _printf
- * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
- * Return: length of the printed string
+ * print_rot13 - uses rot13 to print a str
+ * @l: va_list args
+ * @f: func pointer
+ *
+ * Return: int
  */
 int print_rot13(va_list l, flags_t *f)
 {
@@ -95,10 +92,11 @@ int print_rot13(va_list l, flags_t *f)
 }
 
 /**
- * print_percent - prints a percent
- * @l: va_list arguments from _printf
- * @f: pointer to the struct flags in which we turn the flags on
- * Return: number of char printed
+ * print_percent - prints percent
+ * @l: va_list args
+ * @f: func pointer
+ *
+ * Return: int
  */
 int print_percent(va_list l, flags_t *f)
 {

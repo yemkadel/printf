@@ -1,14 +1,12 @@
 #include "main.h"
-
 /**
- * convert - converts number and base into string
- * @num: input number
- * @base: input base
- * @lowercase: flag if hexa values need to be lowercase
+ * convert - func converts numbers and base to str
+ * @num: number
+ * @base: base
+ * @lowercase: lowercase
  *
- * Return: result string
+ * Return: char pointer
  */
-
 char *convert(unsigned long int num, int base, int lowercase)
 {
 	static char *rep;
