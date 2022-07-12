@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_int - prints an int
  * @l: va_list args
@@ -6,6 +7,7 @@
  *
  * Return: int
  */
+
 int print_int(va_list l, flags_t *f)
 {
 	int n = va_arg(l, int);
@@ -28,6 +30,7 @@ int print_int(va_list l, flags_t *f)
  *
  * Return: int
  */
+
 int print_unsigned(va_list l, flags_t *f)
 {
 	unsigned int u = va_arg(l, unsigned int);
